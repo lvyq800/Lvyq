@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Lvyq.iml" filepath="$PROJECT_DIR$/.idea/modules/Lvyq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Lvyq_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Lvyq_main.iml" group="Lvyq" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Lvyq_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Lvyq_test.iml" group="Lvyq" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+    <title>Hello AngularJS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    <script src="Test.js"></script>
+
+</head>
+
+<body >
+<div ng-app="test" ng-controller="Shopping">
+    <table >
+        <tr>Current Available Items</tr>
+        <tr ng-repeat="x in items">
+            <td><li></li></td>
+            <td>{{ x.name }}</td>
+            <td>{{ x.count }}</td>
+        </tr>
+    </table>
+
+    <br>
+    <br>
+
+    <br>
+<P>Please select a user to start shopping</P>
+    <select ng-model="selectedItem" ng-change="update()"><option id="1" value="1">user1</option><option id="2" value="2">user2</option></select>
+
+
+    <br>
+    <table >
+        <tr>How many items do you want to buy?</tr>
+        <tr ng-repeat="x in summar">
+            <td><li></li></td>
+            <td>{{ x.name }}</td>
+            <td>
+                <div >
+                    <input ng-model="x.tmpCount">
+                </div>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <button ng-click="buyItems()">Buy</button>
+    <br>
+<br>
+    <table >
+        <tr>Purchase Summary</tr>
+        <tr ng-repeat="x in summar">
+            <td><li></li></td>
+            <td>{{ x.name }}</td>
+            <td>{{ x.count }}</td>
+        </tr>
+    </table>
+
+</div>
+
+
+
+
+</body>
+</html>
