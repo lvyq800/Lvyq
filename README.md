@@ -12,3 +12,14 @@ The persistent layer could be based on relational data base such as mysql and sq
 Alternatively, non-sql database such as mongoDB can be used if relational query is less required.
 
 I spent sometime to design and invest, totally around 2 hours used to code, test, and adjust functions. 
+
+Forgot to mention the usage of the system.
+1. open http://localhost:4200 (or real IP if you run it remotely) => the page opens and available goods/count is listed;
+2. by choosing a user under the goods list => the users purchasing interface and a personal goods list is given;
+3. fill in count numbers for goods and click on "buy" button => the buying activity will be submited and these two lists will be refreshed afterwards.
+4. try to choose different users to see the result.
+5. the user selection list provides only two users, however, the backend program can support unlimited users.
+
+Weaknesses of the system due to lack of data verifications:
+1. you can buy negative number of goods and the available goods number can be more than the original number;
+2. the available goods number can be negative since users can buy more goods than the original number.
